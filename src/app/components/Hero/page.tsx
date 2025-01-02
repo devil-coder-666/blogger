@@ -9,9 +9,9 @@ async function Hero() {
   
   
   return (
-    <div className=" w-full flex flex-wrap justify-center items-center pt-12 relative">{bb.map((elem:any)=>{
+    <div className=" w-full flex flex-wrap justify-center items-center pt-12 relative">{bb.map((elem:any, i:any)=>{
     return(
-      <Link href={`${elem.id}`}>
+       <Link href={`${elem.id}`} key={i}>
       <div className="w-[200px] h-[300px] m-1 bg-white rounded-md mt-10 text-center shadow-md pt-4 ">
       <h3 className="pt-10 text-2xl font-mono font-bold ">{elem.title}
         
